@@ -1,0 +1,21 @@
+// _buttons.scss
+.button {
+  background: $amarelo;
+  color: $cinzaEscuro;
+  /*border-color: #131313;*/
+  border: none;
+}
+
+.button:focus,
+.button:hover {
+  background: $cinzaEscuro;
+  color: $branco;
+}
+
+.ver-blog {
+  display: block;
+  width: 230px;
+  background: $cinzaEscuro;
+  color: $branco;
+  margin: auto;
+}

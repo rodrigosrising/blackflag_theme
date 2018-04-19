@@ -1,0 +1,70 @@
+.wrapper-container-empresas {
+  background: $preto;
+  padding: 2rem 0;
+  h3 {
+    color: $branco;
+  }
+  .owl-empresas {
+    padding: 0 2rem;
+    position: relative;
+    .owl-nav {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+    }
+    .owl-prev {
+      color: $branco !important;
+      width: 15px;
+      height: 30px;
+      position: absolute;
+      top: -30px;
+      margin-left: 0;
+      display: block !important;
+      border: none;
+      padding: 0 !important;
+      border-radius: 0 !important;
+    }
+    .owl-next {
+      color: $branco !important;
+      width: 15px;
+      height: 30px;
+      position: absolute;
+      top: -30px;
+      right: -5px;
+      display: block !important;
+      border: none;
+      padding: 0 !important;
+      border-radius: 0 !important;
+    }
+    .owl-prev i,
+    .owl-next i {
+      color: $branco !important;
+      font-size: 2rem;
+    }
+    .owl-dots {
+      margin: 0;
+      position: absolute;
+      bottom: -1.2rem;
+      right: 0rem;
+      width: 100%;
+      .owl-dot {
+        span {
+          background: $paragrafo;
+          @include box-shadow;
+          border: 1px solid $titulo;
+          -webkit-border-radius: 0;
+          border-radius: 0;
+          width: 14px;
+          height: 14px;
+        }
+        &.active,
+        &:hover {
+          span {
+            background: $amarelo;
+          }
+        }
+      }
+    }
+  }
+}

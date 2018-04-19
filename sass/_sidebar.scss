@@ -1,0 +1,56 @@
+// _sidebar.scss
+.widget-sidebar ul {
+  padding: 0 10px;
+}
+
+.widget-sidebar li {
+  padding: 5px 10px 5px 0;
+  border-bottom: 1px dashed #ebebeb;
+  list-style: square;
+  display: list-item;
+}
+
+.widget-sidebar li:last-child {
+  border-bottom: none;
+}
+
+.widget-sidebar a {
+  color: #6b6b6b;
+}
+
+.widget-sidebar a:hover {
+  color: $titulo;
+}
+
+/*TAG CLOUD*/
+
+.post-tags p {
+  margin-bottom: 0;
+}
+
+.post-tags a,
+.tagcloud a {
+  background: $amarelo;
+  color: $titulo;
+  padding: 2px;
+}
+
+/*SINGLE POST*/
+
+.single-post .inner-column-post {
+  padding-top: 0;
+  border: none;
+}
+
+.inner-column-post h1:before {
+  display: none;
+}
+
+.entry-meta {
+  color: #6b6b6b;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+  border-bottom: 1px dashed #ebebeb;
+  border-top: 1px dashed #ebebeb;
+  padding: 0.2rem 0.5rem;
+}

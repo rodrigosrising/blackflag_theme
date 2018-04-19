@@ -1,0 +1,42 @@
+// _social-buttons.scss
+.social-buttons {
+  margin-top: 1rem;
+}
+
+.social-buttons a {
+  border: none;
+  background: #FF0;
+  color: #161616;
+  width: 40px;
+  height: 38px;
+  margin-right: 0.5rem !important;
+}
+
+.social-buttons a i {
+  color: #161616;
+  transition: color 0.25s ease-out;
+}
+
+.social-buttons a:focus,
+.social-buttons a:hover {
+  background: #161616;
+}
+
+.social-buttons a:focus i,
+.social-buttons a:hover i {
+  color: #FFF;
+}
+
+/* Small only */
+
+@media screen and (max-width: 39.9375em) {
+  .address-box,
+  .nav-box {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    /*border-bottom: 1px solid  #1f1f1f;*/
+  }
+  .social-box {
+    margin-top: 0.5rem;
+  }
+}

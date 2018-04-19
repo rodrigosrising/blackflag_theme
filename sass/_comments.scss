@@ -1,0 +1,127 @@
+// _comments.scss
+.comments-area {
+  color: $paragrafo;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  /*border-top: 1px dashed #ebebeb;*/
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.single-post .comments-area {
+  margin-bottom: 0;
+}
+
+#respond {
+  padding: 1rem 0 0;
+  margin-top: 1rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*border-top: 1px dashed #ebebeb;*/
+}
+
+#commentform p {
+  color: #4c4b4b;
+}
+
+#commentform input[type='text'],
+#commentform textarea {
+  width: 100%;
+  height: 50px;
+  line-height: 1.6rem !important;
+  padding: 10px 20px;
+  background: $branco;
+  border: 1px solid #E6E6E6;
+  font-size: 20px;
+  margin: 20px 0 10px;
+  text-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 2px 2px 4px #EBEBEB;
+  box-shadow: inset 2px 2px 4px #EBEBEB;
+}
+
+#commentform textarea {
+  height: 200px;
+}
+
+#commentform #submit {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem;
+  padding: 0.85em 1em;
+  -webkit-appearance: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  font-size: 0.9rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background: $cinzaEscuro;
+  color: $branco;
+  margin: auto;
+  width: 150px;
+}
+
+.comment-reply-title {
+  color: $titulo;
+}
+
+.commentlist {
+  padding: 15px;
+}
+
+.comment-body {
+  background-color: #f9f9f9;
+  border-bottom: 1px dashed #cfcfcf;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.comment-body a {
+  color: $titulo;
+}
+
+.odd {
+  padding: 15px 0 15px 30px;
+}
+
+.odd .comment-body {
+  background: #f1f1f1;
+  overflow: hidden;
+  padding: 15px;
+}
+
+.vcard {
+  font-family: monospace;
+}
+
+.vcard img {
+  width: 32px;
+  float: left;
+  margin-right: 10px;
+}
+
+.odd .fn {
+  color: $titulo;
+}
+
+.odd .says {
+  color: $titulo;
+}
+
+ul.children {
+  padding: 15px 0;
+}
+
+/*AUTOR*/
+
+.author-box {
+  background: $titulo;
+  padding: 2rem;
+  color: $branco;
+  margin-bottom: 5rem;
+}

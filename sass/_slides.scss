@@ -1,0 +1,149 @@
+// _slides.scss
+.main-header-content {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.background-header {
+  position: relative;
+  height: 65vh;
+  max-height: 65vh;
+  @include background-center-cover;
+}
+
+.background-header {
+  .background-header-image {
+    @include background-center-cover;
+    height: 100%;
+  }
+}
+
+/*OWL SLIDES*/
+
+.olw-home-slides {
+  position: relative;
+  height: 65vh;
+  overflow: hidden;
+  .the_slide {
+    position: relative;
+    height: 65vh;
+    background-position: top center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .owl-dots {
+    bottom: 38px;
+    text-align: right;
+    position: relative;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    z-index: 999;
+    .owl-dot {
+      span {
+        background: $paragrafo;
+        @include box-shadow;
+        border: 1px solid $titulo;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        width: 14px;
+        height: 14px;
+      }
+      &.active,
+      &:hover {
+        span {
+          background: $amarelo;
+        }
+      }
+    }
+  }
+}
+
+/* Medium and up */
+
+@media screen and (min-width: 40em) {
+  .background-header {
+    height: 75vh;
+    max-height: 75vh;
+  }
+  .single-portfolio {
+    .background-header {
+      height: 100vh;
+      max-height: 100vh;
+    }
+  }
+  .olw-home-slides {
+    height: 100vh;
+    .the_slide {
+      position: relative;
+      height: 100vh;
+      background-position: top center;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .owl-dots {
+      bottom: 38px;
+      text-align: right;
+      position: relative;
+      width: 100%;
+      max-width: 75rem;
+      margin: 0 auto;
+      z-index: 999;
+    }
+  }
+}
+
+.titulo-banner-container {
+  width: calc(100% - 3rem);
+  position: absolute;
+  @include translate-bottom;
+  .inner-banner-container {
+    width: 75rem;
+    max-width: 100%;
+    margin: 0 auto;
+    .titulo-banner {
+      font-family: 'Armata', sans-serif;
+      color: #FFF;
+      display: inline;
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+      display: block;
+      text-align: center;
+      font-size: 1rem;
+      text-transform: uppercase
+    }
+    .saiba-mais-banner {
+      font-weight: bold;
+      width: 108px;
+      display: block;
+      margin: 1rem auto;
+    }
+  }
+}
+
+/* Medium only */
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .titulo-banner-container {
+    .inner-banner-container {
+      .titulo-banner {
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+/* Large and up */
+
+@media screen and (min-width: 64em) {
+  .titulo-banner-container {
+    @include translate-center;
+    .inner-banner-container {
+      .titulo-banner {
+        font-size: 2.8rem;
+      }
+    }
+  }
+}

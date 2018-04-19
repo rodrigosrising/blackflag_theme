@@ -1,0 +1,147 @@
+body,
+html {
+  font-family: 'Open Sans', sans-serif;
+  background: #FFF;
+  height: 100%;
+}
+
+/*==========================NOVO=============================*/
+
+/*RESET*/
+
+:focus {
+  outline: none;
+}
+
+::selection {
+  background: #ff0;
+  color: #131313;
+  text-shadow: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #cacaca;
+  /*text-shadow: 1px 1px 1px #080707;*/
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #cacaca;
+  /*text-shadow: 1px 1px 1px #080707;*/
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #cacaca;
+  /*text-shadow: 1px 1px 1px #080707;*/
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #cacaca;
+  /*text-shadow: 1px 1px 1px #080707;*/
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+blockquote{
+  border-left: 1px solid $amarelo;
+}
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(247, 247, 247, 0.12);
+}
+
+address {
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+address p {
+  margin-bottom: 0.5rem;
+}
+
+address i {
+  color: #FF0;
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  border-color: #131313;
+  background-color: #1f1d1d;
+  /*-webkit-box-shadow: inset 2px 2px 4px #080707;
+  box-shadow: inset 2px 2px 4px #080707;*/
+  color: #828282;
+  text-shadow: 1px 1px 1px #080707;
+}
+
+[type='text']:focus,
+[type='password']:focus,
+[type='date']:focus,
+[type='datetime']:focus,
+[type='datetime-local']:focus,
+[type='month']:focus,
+[type='week']:focus,
+[type='email']:focus,
+[type='number']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='time']:focus,
+[type='url']:focus,
+[type='color']:focus,
+textarea:focus {
+  border-color: transparent;
+  background-color: #1f1d1d;
+  -webkit-box-shadow: inset 2px 2px 8px #080707;
+  box-shadow: inset 2px 2px 8px #080707;
+}
+
+.thumbnail {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+}
+
+// .page-template-default .main a,
+.single-portfolio .main a {
+  font-weight: bold;
+  border-bottom: 1px dashed #8a8a8a;
+  color: #131313;
+}
+
+/*TITLE*/
+
+h1,
+h2 {
+  font-weight: bold;
+}
+
+h1:before,
+h2:before,
+h3:before {
+  content: "// ";
+  color: #ff0;
+  font-weight: bold;
+}
+
+.no-before-after:after,
+.no-before-after:before {
+  display: none;
+}

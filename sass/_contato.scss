@@ -1,0 +1,88 @@
+// _contato.scss
+.page-template-template-contato .main [type='text'],
+.page-template-template-contato .main [type='email'],
+.page-template-template-contato .main [type='tel'] {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  padding: 10px 20px;
+  background: #FFF;
+  border: 1px solid #E6E6E6;
+  font-size: 20px;
+  margin: 20px 0 10px;
+  text-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 2px 2px 4px #EBEBEB;
+  box-shadow: inset 2px 2px 4px #EBEBEB;
+}
+
+.page-template-template-contato .main textarea {
+  width: 100%;
+  height: 150px;
+  line-height: 1.6rem;
+  padding: 10px 20px;
+  background: #FFF;
+  border: 1px solid #E6E6E6;
+  font-size: 20px;
+  margin: 20px 0 10px;
+  text-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 2px 2px 4px #EBEBEB;
+  box-shadow: inset 2px 2px 4px #EBEBEB;
+}
+
+/*NEWSLETTER FORM*/
+
+.newsletter-box .wpcf7-form-control-wrap {
+  width: 100%;
+}
+
+.newsletter-box .wpcf7-email {
+  height: 42px;
+}
+
+.newsletter-box .input-group-button {
+  position: relative;
+}
+
+div.wpcf7 img.ajax-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #131313;
+  padding: 12px 33px;
+}
+
+div.wpcf7-response-output {
+  margin: 1em 0.5em;
+  padding: 0.2em 1em;
+}
+
+div.wpcf7-mail-sent-ok {
+  border: 2px solid #398f14;
+  background: #398F14;
+}
+
+div.wpcf7-mail-sent-ng {
+  border: 2px solid #ff0000;
+  background: #F00;
+}
+
+div.wpcf7-spam-blocked {
+  border: 2px solid #ffa500;
+  background: #FFA500;
+}
+
+div.wpcf7-validation-errors {
+  border: 2px solid #FF0;
+  background: #FF0;
+  color: #131313;
+}
+
+span.wpcf7-not-valid-tip {
+  text-align: left;
+}

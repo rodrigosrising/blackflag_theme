@@ -1,0 +1,21 @@
+// _pagination.scss
+ul.pagination {
+  margin-top: 1rem;
+}
+
+.pagination a {
+  background: $branco;
+  color: $titulo;
+}
+
+.pagination a:hover,
+.pagination button:hover {
+  color: $titulo;
+  background: $amarelo;
+}
+
+.pagination .current,
+.pagination .current:hover {
+  color: $titulo;
+  background: #e6e6e6;
+}

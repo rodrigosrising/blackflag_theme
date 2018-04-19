@@ -1,0 +1,72 @@
+// _menus.scss
+.off-menu {
+  padding: 0.5rem 0;
+}
+
+.off-menu>li {
+  padding: 0;
+  border-bottom: 1px dashed #1f1f1f;
+}
+
+.off-menu>li:hover {
+  background: #212121;
+}
+
+.off-menu>li>a {
+  color: #FFF;
+}
+
+.off-menu>li>a:before {
+  content: "//";
+  color: #ff0;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.nav-menu-column {
+  max-height: 120px;
+}
+
+.header-menu {
+  margin-top: 0.8rem;
+}
+
+.header-menu>li>a {
+  font-family: 'Armata', sans-serif;
+  font-size: 1.4rem;
+  color: #FFF;
+  padding: 0;
+  margin: 0.7rem 1rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header-menu>li>a:before {
+  content: "//";
+  color: #ff0;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.header-menu>li>a:focus,
+.header-menu>li>a:hover,
+.header-menu>li.current-item>a {
+  color: #FF0;
+}
+
+.header-menu li {
+  padding: 0;
+}
+
+/* Medium only */
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .header-menu>li>a {
+    font-size: 1rem;
+  }
+}
+
+.menu-icon {
+  margin-top: 3.5rem;
+}
