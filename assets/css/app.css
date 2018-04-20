@@ -151,6 +151,12 @@ h3:before {
   display: none;
 }
 
+.owl-carousel .owl-stage,
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: auto;
+  touch-action: auto;
+}
+
 .button {
   background: #FF0;
   color: #161616;
@@ -425,7 +431,6 @@ h3:before {
 .olw-home-slides {
   position: relative;
   height: 65vh;
-  overflow: hidden;
 }
 
 .olw-home-slides .the_slide {
@@ -567,6 +572,7 @@ h3:before {
   text-align: right;
   opacity: 1;
   visibility: visible;
+  border: none;
 }
 
 .portfolio-item .item-content .text-container {
@@ -617,6 +623,8 @@ h3:before {
   position: relative;
   text-align: center;
   overflow: hidden;
+  font-family: "Armata", sans-serif;
+  font-size: 0.92rem;
 }
 
 .portfolio-first span {
@@ -824,7 +832,6 @@ h3:before {
 }
 
 .wrapper-container-empresas .owl-empresas {
-  padding: 0 2rem;
   position: relative;
 }
 
@@ -1466,6 +1473,13 @@ ul.menu-parceiros li.cenp:hover a {
     height: 100%;
     opacity: 0;
     visibility: hidden;
+  }
+
+  .portfolio-item:hover .item-content {
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
   }
 
   .blog-wrapper {

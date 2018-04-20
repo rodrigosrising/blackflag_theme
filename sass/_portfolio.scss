@@ -20,6 +20,7 @@
     text-align: right;
     opacity: 1;
     visibility: visible;
+    border: none;
     .text-container {
       position: absolute;
       bottom: 0;
@@ -64,7 +65,17 @@
       height: 100%;
       opacity: 0;
       visibility: hidden;
-    }
+      // border: 0px solid rgba(255, 255, 255, .2);
+      }
+    &:hover {
+      .item-content {
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        // border: 10px solid rgba(255, 255, 255, .6);
+      }
+  }
   }
 }
 
@@ -76,6 +87,8 @@
   position: relative;
   text-align: center;
   overflow: hidden;
+  font-family: $armata;
+  font-size: 0.92rem;
   span {
     display: block;
     width: calc(100% - 3rem);

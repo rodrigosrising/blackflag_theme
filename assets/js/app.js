@@ -9,7 +9,8 @@ jQuery(function ($) {
       autoplay:true,
       autoplayTimeout:5000,
       autoplayHoverPause:true,
-      touchDrag:false,
+      mouseDrag: false,
+      touchDrag: true,
     });
 
     $('.owl-empresas').owlCarousel({

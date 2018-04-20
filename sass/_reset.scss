@@ -145,3 +145,8 @@ h3:before {
 .no-before-after:before {
   display: none;
 }
+
+.owl-carousel .owl-stage, .owl-carousel.owl-drag .owl-item{
+  -ms-touch-action: auto;
+      touch-action: auto;
+}
