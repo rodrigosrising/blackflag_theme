@@ -15,6 +15,13 @@
 	?>
 </head>
 <body <?php body_class( 'body' ); ?>>
+	<div class="pre-loader">
+		<div class="spinner">
+			<div class="ball"></div>
+			<p>CARREGANDO</p>
+		</div>
+	</div>
+	<!-- pre-loading -->
 	<?php if (is_front_page()): ?>
 		<?php if (get_field('video_background', 'option')): ?>
 			<div class="video-off-canvas off-canvas-wrapper">

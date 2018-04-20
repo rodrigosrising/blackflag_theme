@@ -32,7 +32,7 @@ $query_blog = new WP_Query( $args );
 	</div><!-- row -->
 	<div class="row expanded">
 		<div class="large-12 columns">
-			<a href="<?php echo site_url('/blog.php'); ?>" class="button ver-blog">Ver todos os posts do blog</a>
+			<a href="<?php echo site_url('/blog'); ?>" class="button ver-blog">Ver todos os posts do blog</a>
 		</div><!-- columns -->
 	</div><!-- row -->
 </div><!-- blog-wrapper -->

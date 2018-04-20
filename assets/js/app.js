@@ -1,6 +1,13 @@
 jQuery(function ($) {
-	$(document).foundation();
+  $(document).foundation();
 
+  // Wait for window load
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".pre-loader").fadeOut("slow");
+  });
+
+  // owl slide home
 	$( document ).ready(function() {
 	    $('.olw-home-slides').owlCarousel({
       items:1,
@@ -13,6 +20,7 @@ jQuery(function ($) {
       touchDrag: true,
     });
 
+    // owl slide empresas
     $('.owl-empresas').owlCarousel({
       loop:true,
       dots:false,
@@ -49,6 +57,7 @@ jQuery(function ($) {
 
 	});
 
+  // social share buttons
 	$(document).ready(function( ) {
 		$('#facebook-share').on('click', function() {
 			ga('send', 'event', 'redes sociais', 'click', 'Compartilhado no Facebook');
@@ -71,6 +80,7 @@ jQuery(function ($) {
 		});
 	});
 
+  // home animation cubes
 	if($('.home-animation').length >0 ){
 		$( document ).ready(function() {
 			for (var i = 0; i < 240; i++) {
@@ -100,6 +110,7 @@ jQuery(function ($) {
 		});
 	};
 
+  // stellar parallax header
 	$.stellar({
     horizontalScrolling: false,
     verticalOffset: 0,
