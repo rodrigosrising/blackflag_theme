@@ -104,12 +104,14 @@
     width: 75rem;
     max-width: 100%;
     margin: 0 auto;
+    text-align: center;
     .titulo-banner {
       font-family: 'Armata', sans-serif;
-      color: #FFF;
+      color: $titulo;
+      background: rgba(255, 255, 0, 0.8);
       display: inline;
-      text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
-      display: block;
+      // text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+      display: inline;
       text-align: center;
       font-size: 1rem;
       text-transform: uppercase
@@ -143,6 +145,7 @@
     .inner-banner-container {
       .titulo-banner {
         font-size: 2.8rem;
+        line-break: 3.5rem;
       }
     }
   }

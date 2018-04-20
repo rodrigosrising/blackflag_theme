@@ -576,14 +576,15 @@ h3:before {
   width: 75rem;
   max-width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .titulo-banner-container .inner-banner-container .titulo-banner {
   font-family: 'Armata', sans-serif;
-  color: #FFF;
+  color: #131313;
+  background: rgba(255, 255, 0, 0.8);
   display: inline;
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
-  display: block;
+  display: inline;
   text-align: center;
   font-size: 1rem;
   text-transform: uppercase;
@@ -628,6 +629,13 @@ h3:before {
   text-shadow: 1px 1px 1px #000;
   font-size: 1.3rem;
   letter-spacing: 1px;
+}
+
+.feature-box h4 span {
+  background: #FF0;
+  color: #131313;
+  display: table;
+  text-shadow: none;
 }
 
 .feature-box p {
@@ -1539,6 +1547,7 @@ ul.menu-parceiros li.cenp:hover a {
 
   .titulo-banner-container .inner-banner-container .titulo-banner {
     font-size: 2.8rem;
+    line-break: 3.5rem;
   }
 
   .feature-box {

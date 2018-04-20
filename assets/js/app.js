@@ -116,4 +116,10 @@ jQuery(function ($) {
     verticalOffset: 0,
     horizontalOffset: 0
   });
+
+  $(".feature-box h4").html(function(){
+    var text= $(this).text().trim().split(" ");
+    var last = text.pop();
+    return text.join(" ") + (text.length > 0 ? " <span>" + last + "</span>" : last);
+  });
 });/*END JQUERY WRAPPER*/
